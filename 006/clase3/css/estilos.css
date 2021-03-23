@@ -1,0 +1,25 @@
+/*Selector de elemento HTML*/
+body{
+    background-color: #A8DADC;
+}
+
+h1{
+    color: #E63946;
+    text-decoration: underline;
+}
+
+
+ 
+/*Selector de ID (o gato) */
+#primero{
+    color:#457B9D;
+}
+
+/* Selector de clase (o punto) */
+.destacado{
+    background-color: #FF0;
+}
+
+.centrado{
+    text-align: center;
+}
