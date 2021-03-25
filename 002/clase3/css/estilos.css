@@ -1,0 +1,58 @@
+*{
+    font-family: Verdana;
+}
+
+body{
+    background-color: #AAA;
+}
+
+h1, p{
+    color:#FF0000;
+}
+
+/* p{
+    color:#00FF00;
+} */
+
+ul{
+    list-style-type:circle;
+}
+
+ol{
+    list-style-type: upper-latin;
+}
+
+#primero{
+    font-weight: bold;
+    color: #00F;
+}
+
+.destacado{
+    background-color: #FFFF00;
+}
+
+.centrado{
+    text-align: center;
+}
+
+#uno,#dos, #tres{
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border: 1px #333 solid;
+    margin-bottom: 10px;
+}
+
+#uno{
+    background-color: #FFC107 ;
+
+ }
+
+#dos{
+    background-color: #FFA000;
+}
+
+#tres{
+    background-color: #FFECB3;
+}
