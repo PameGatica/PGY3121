@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+    background-color: #D6EFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/fondo2.png");
+    background-repeat: repeat;
+    /* background-size: cover; */
+}
+/* Este es un comentario */
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'New Tegomin', serif;
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+}
+
+p{
+    text-align: justify;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+#uno, #dos, #tres, #cuatro{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+
+}
+
+#uno{
+    background-color: #FE654F;
+    float:left;
+}
+
+#dos{
+    background-color: #FED18C;
+    float:left;
+}
+
+#tres{
+    background-color: #D6EFFF;
+    clear: both;
+    float: left;
+}
+
+#cuatro{
+    background-color: #FED99B ;
+    float: left;
+}
+
+
+
+header{
+    background-color: #FE654F;
+    width: 100%;
+    height: 300px;
+}
+
+nav{
+    background-color: #FED99B ;
+    width: 15%;
+    height: 400px;
+    float:left;
+}
+
+section{
+    background-color: #FED18C;
+    width: 85%;
+    height: 400px;
+    float: left;
+}
+
+footer{
+    clear: both;
+    background-color: #D6EFFF;
+    width: 100%;
+    height: 200px;
+}
