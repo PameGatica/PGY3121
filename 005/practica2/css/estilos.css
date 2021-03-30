@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #303030;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul a {
+ text-decoration: none;
+ color:#FFFFFF;
+}
+
+ul a:hover{
+    color: #C5C7C8;
+}
+
+nav{
+    width: 20%;
+    height: 100vh;
+    float: left;
+    padding: 5% 0 0 3%;
+    
+}
+
+section{
+    width: 75%;
+    height: 100vh;
+    float: left;
+   
+}
+
+#uno, #dos, #tres, #cuatro{
+    width: 100%;
+    height: 25vh;
+    padding: 5% 3% 5% 15%;
+}
+
+#uno{
+    background-color: #00D9F3;
+}
+#dos{
+    background-color: #FFDF00;
+}
+#tres{
+    background-color: #FF7B00;
+}
+#cuatro{
+    background-color: #FF000A;
+}
