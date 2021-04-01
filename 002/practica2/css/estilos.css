@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #303030;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+nav{
+    width: 20%;
+    height: 100vh;
+    float:left;
+    padding: 5% 0 0 3%;
+}
+
+nav ul li a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #C5C6C6;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+section{
+    width: 78%;
+    height: 100vh;
+    float: left; 
+}
+
+#uno, #dos, #tres, #cuatro{
+    height: 25vh;
+    padding: 5% 15% 0 15%;
+    font-size: 0.8em;
+}
+
+#uno{
+    background-color: #00D9F3;
+}
+#dos{
+    background-color: #FFDF00;
+}
+#tres{
+    background-color: #FF7B00;
+}
+#cuatro{
+    background-color: #FF000A;
+}
