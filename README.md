@@ -1,7 +1,7 @@
 # PGY3121
 
 ## Proyecto de  base para Bootstrap
->Clic derecho, guardar enlace como...
+
 
 - [Versión .rar](https://drive.google.com/file/d/1pbboIqJOR4Owsjmpv7uFngxsFNnDnZHj/view?usp=sharing)
 - [Versión .zip](https://drive.google.com/file/d/133VSICXl7nkWVvAKgUPqKeBNi1XYiOrO/view?usp=sharing)
