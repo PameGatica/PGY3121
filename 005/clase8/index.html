@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form action="" method="POST">
+
+        <h1>Input</h1>
+        <fieldset>
+            <legend>Cajas de Texto</legend>
+            <h2>type: text</h2>
+
+            <div class="form-group">
+                <label for="nombre">Username: </label> 
+                <input type="text" class="form-control" name="nombre" id="nombre"  placeholder="Tu nombre de usuario">
+            </div>
+
+            <h2>type: password</h2>
+            Password: <input type="password" name="password" id="password" placeholder="Tu contraseña">
+            
+            <h2>type: email</h2>
+            Correo: <input type="email" name="email" id="password" placeholder="Tu correo electrónico">
+            
+            <h2>type: url</h2>
+            GitHub: <input type="url" name="github" id="github" placeholder="Tu repo en GitHub">
+            
+            <h2>type: number</h2>
+            Edad: <input type="number" name="edad" id="edad" placeholder="Tu edad" min="0">
+        </fieldset>
+        <h2>type: date (Date Picker)</h2>
+        Fecha Nacimiento: <input type="date" name="fechaNac" id="fechaNac" min="2021-04-22">
+        
+        <h2>type: time (Hour Picker)</h2>
+        Hora Nacimiento: <input type="time" name="horaNac" id="horaNac">
+        
+
+        <h2>type: radio (Radio Button)</h2>
+        Opción 1 <input type="radio" name="opciones" id="">
+        Opción 2 <input type="radio" name="opciones" id="">
+
+        <h2>type: checkbox (Checkbox)</h2>
+        Opción 1 <input type="checkbox" name="chk1" id="">
+        Opción 2 <input type="checkbox" name="chk2" id="">
+
+        <h1>Select (Combobox)</h1>
+        <h2>Simple</h2>
+        Lenguaje Preferido: 
+        <select name="combo" id="combo">
+            <option value="0">Ninguno</option>
+            <option value="1">Java</option>
+            <option value="2" selected>Python</option>
+            <option value="3">C#</option>
+        </select>
+
+        <h2>Agrupada</h2>
+        Lenguaje Preferido: 
+        <select name="combo2" id="combo2">
+            <option value="0" selected>Ninguno</option>
+        <optgroup label="Programación">
+            <option value="1">Java</option>
+            <option value="2">Python</option>
+            <option value="3">C#</option>
+        </optgroup>
+        <optgroup label="Otros">
+            <option value="4">SQL</option>
+            <option value="5">Pseudolenguaje</option>
+            <option value="6">PL/SQL</option>
+        </optgroup>
+        </select>
+
+        <h2>Lista Desplegada (List)</h2>
+        Lenguaje Preferido: 
+        <select name="combo3" id="combo3" size="4" multiple>
+            <option value="0">Ninguno</option>
+            <option value="1">Java</option>
+            <option value="2">Python</option>
+            <option value="3">C#</option>
+        </select>
+
+        <h1>TextArea</h1>
+
+        Comentarios: <br><textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+
+        <br><hr>
+        <button type="submit" class="btn btn-primary">Enviar</button> <!--SUBMIT: ENVIAR EL FORMULARIO -->
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <button type="button" class="btn btn-info" onclick="alert('Hola mundo')">Botón</button>
+
+    </form>
+</body>
+</html>
