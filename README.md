@@ -12,9 +12,9 @@
 ## Links Útiles
 
 ### Bootstrap
-[Documentación v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-[Documentación Formularios](https://getbootstrap.com/docs/4.6/components/forms/)
-[Documentación Botones](https://getbootstrap.com/docs/4.6/components/buttons/)
+- [Documentación v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [Documentación Formularios](https://getbootstrap.com/docs/4.6/components/forms/)
+- [Documentación Botones](https://getbootstrap.com/docs/4.6/components/buttons/)
 
 
 ### Formularios
