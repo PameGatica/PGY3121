@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Formularios</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Ejemplos Input</legend>
+            <div class="form-group">
+                <h4>Input: Text</h4>
+                <label for="nombre">Nombre de Usuario: </label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre"><br>
+            </div>  
+
+            <h4>Input: Radio</h4>
+            Femenino  <input type="radio" name="genero" id="">
+            Masculino <input type="radio" name="genero" id="">
+
+            <h4>Input: Checkbox</h4>
+            <input type="checkbox" name="chkTerminos" id="">
+            Acepto los términos y condiciones...
+
+            <h4>Input: number</h4>
+            Nota: <input type="number" name="telefono" id="" min="0" max="7" step="0.1">
+            
+            <h4>Input: Range (Slider)</h4>
+            <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+            
+            <h4>Input: Date (Date Picker)</h4>
+            <input type="date" name="fecha" id="">
+        </fieldset>
+        <fieldset>
+            <legend>Ejemplos Select</legend>
+            <h4>Select (Combobox)</h4>
+            <select name="combo" id="">
+                <option value="0">Selecciona</option>
+                <option value="1">Lunes</option>
+                <option value="2">Miércoles</option>
+                <option value="3" selected>Viernes</option>
+            </select>
+            <br>
+            <h5>Select con grupos de opciones</h5>
+            <select name="alimentos" id="">
+                <optgroup label="Lácteos">
+                    <option value="1">Leche</option>
+                    <option value="2">Queso</option>
+                    <option value="3">Yogurt</option>
+                </optgroup>
+                <optgroup label="Frutas">
+                    <option value="4">Sandía</option>
+                    <option value="5">Palta</option>
+                    <option value="6">Naranja</option>
+                </optgroup>
+            </select>
+
+            <h5>Lista Desplegada (List)</h5>
+            <select name="combo" id="" size="3" multiple>
+                <option value="0">Selecciona</option>
+                <option value="1">Lunes</option>
+                <option value="2">Miércoles</option>
+                <option value="3" selected>Viernes</option>
+            </select>
+        </fieldset>
+        <h4>Text Area</h4>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+        <hr>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Restablecer</button>
+        <button type="button" class="btn btn-outline-warning">Botón</button>
+        </form>
+</body>
+</html>
