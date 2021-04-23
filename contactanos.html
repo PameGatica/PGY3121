@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRA4 - Ayuda a un Peludo - Formularios Web </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="row">
+            <nav class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.PNG" alt="Logo Patita"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </nav>
+
+        <header class="row">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y"
+                            class="d-block w-100" alt=".Perro pug">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.picsum.photos/id/237/3500/2095.jpg?hmac=y2n_cflHFKpQwLOL1SSCtVDqL8NmOnBzEW7LYKZ-z_o"
+                            class="d-block w-100" alt="Labrador negro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
+                            class="d-block w-100" alt="Nariz de gato">
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="row pt-3 pb-3">
+            <div class="container-fluid">
+                <form>
+                    <div class="row pb-4">
+                        <div class="col"></div>
+                        <div class="col-8">
+                            <h1>¡Contáctanos!</h1>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="form-check form-check-inline pl-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">RUT</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Pasaporte</label>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="form-row pb-2">
+                        <div class="col-2"></div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" placeholder="N° Identificación">
+                        </div>
+                        <div class="col-5">
+                            <input type="text" class="form-control" placeholder="Nombre Completo">
+                        </div>
+                        <div class="col">
+
+                        </div>
+
+                        <div class="col-2"></div>
+                    </div>
+
+                    <div class="form-row pb-2">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="col">
+                            <input type="tel" class="form-control" placeholder="Teléfono de Contacto">
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="form-row pb-2">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <select class="custom-select mb-3">
+                                <option selected>Ciudad de Residencia</option>
+                                <option value="1">Valparaíso</option>
+                                <option value="2">Viña del Mar</option>
+                                <option value="3">Concón</option>
+                                <option value="4">Quilpué</option>
+                                <option value="5">Villa Alemana</option>
+                                <option value="6">Casablanca</option>
+                            </select>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+
+                    <div class="form-row pb-2">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1">Cuéntanos por qué te gustaría participar en nuestra ONG</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+
+                    <div class="form-row pb-2">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <button class="btn btn-primary">Enviar</button>
+                            <button class="btn btn-secondary" type="reset">Limpiar</button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="row">
+            <section class="col-8">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Los ojos de un animal tienen el poder de hablar un gran lenguaje. </p>
+                    <footer class="blockquote-footer">Martin Buber</cite></footer>
+                </blockquote>
+            </section>
+            <section class="col-4 text-right">
+
+
+                <p class>Fundación Ayuda a Un Peludo</p>
+                <address>
+                    Alvares #2236, <br>
+                    Viña del Mar
+                </address>
+
+            </section>
+
+        </footer>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

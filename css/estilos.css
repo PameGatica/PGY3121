@@ -3,12 +3,22 @@
 }
 
 footer {
-    padding-top:20px;
+    padding-top: 20px;
     color: #FFF;
     background-color: #EA6927;
 }
 
-
 .blockquote-footer {
     color: #FFF;
+}
+
+.btn-primary {
+    background-color: #EA6927;
+    border: #EA6927;
+}
+
+.btn-primary:hover {
+    background-color: #EBAB47;
+    border: #EBAB47;
+    ;
 }
