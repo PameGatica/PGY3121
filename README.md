@@ -1,7 +1,9 @@
 # PGY3121
 
-## Demo Ayuda a un Perrito
-[Link](https://pamegatica.github.io/PGY3121/index.html)
+## AYUDA A UN PELUDO :dog: 
+[:round_pushpin: Demo](https://pamegatica.github.io/PGY3121/index.html)
+- [x] Práctica 3: Bootstrap
+- [x] Práctica 4: Formulario Web 
 
 
 
