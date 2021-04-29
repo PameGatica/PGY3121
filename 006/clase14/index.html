@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript y jQuery</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <h1 id="h1Saludo">Hola Mundo</h1>
+
+    <img id="imgSaludo" src="img/greeting.png" alt="Hombre saludando" onmouseover="hablar('Hola')"
+        onmouseout="hablar('Chao')">
+
+    <br>
+
+    <button type="button" onclick="saludar()">Llamar función</button>
+    <button type="button" onclick="alert('Hola Mundo desde botón');console.log('Hola Mundo desde botón')">Llamar Alert y
+        Log</button>
+
+    <hr>
+
+    <form action="">
+        <label for="num1">Numero 1: </label>
+        <input type="number" name="num1" id="num1">
+        <br>
+        <label for="num2">Numero 2: </label>
+        <input type="number" name="num2" id="num2">
+        <br>
+        <button type="button" onclick="sumar()">Sumar JS</button>
+        <button id="btnSumar" type="button">Sumar jQuery</button>
+        <h3 id="res"></h3>
+    </form>
+    <!-- Ejemplo Javascript -->
+    <script>
+        alert("Hola Mundo desde HTML")
+        console.log("Hola Mundo desde HTML")
+    </script>
+
+    <!-- Ejemplo jQuery -->
+    <script>
+        $(document).ready(
+            function () {
+                //ACA VA MI CÓDIGO
+                $("#imgSaludo").click(
+                    function () {
+                        //Que va a hacer el sistema cuando se haga click en la imágen
+                        $("#imgSaludo").fadeOut() //hide()    
+                    }
+                );
+
+                $("#btnSumar").click(
+                    function () {
+                        var n1 = parseInt($("#num1").val())
+                        var n2 = parseInt($("#num2").val())
+
+                        var suma = n1 + n2
+
+                        $("#res").html(suma)
+
+                    }
+                );
+
+            }
+        );
+
+    </script>
+
+
+
+</body>
+
+</html>
