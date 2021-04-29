@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <script>
+       // alert("Hola Mundo desde HTML")
+       // console.log("Hola Mundo desde HTML")
+    </script>
+
+    <h1 id="h1Saludo">Hola Mundo</h1>
+
+    <!-- <img src="img/file.png" alt="Icono Home" onmouseover="saludar()" onmouseout="despedida()"> -->
+    <img src="img/file.png" alt="Icono Home" id="imgHome">
+    <br>
+    <button id="btnOcultar">Ocultar Imagen</button>
+
+
+
+    <button type="button" onclick="holaMundo()">
+        Ejecutar Función Javascript
+    </button>
+
+    <button type="button" onclick="alert('Hola Mundo desde botón'); console.log('Hola Mundo desde botón')">
+        Ejecutar Javascript
+    </button>
+
+    <hr>
+
+    <form action="">
+        <label for="num1">Numero 1:</label>
+        <input type="number" name="" id="num1">
+        <br>
+        <label for="num2">Numero 2:</label>
+        <input type="number" name="" id="num2">
+        <br>
+        <label for="res">Resultado:</label>
+        <input type="number" name="" id="res" readonly>
+        <br>
+        <button type="button" onclick="sumar()">Sumar</button>
+        <h2 id="res"></h2>
+    </form>
+
+    <script>
+        $(document).ready(
+            function(){
+                //aca va mi código
+                $("#btnOcultar").click(
+                    function(){
+                        $("#imgHome").hide();
+                        $("#h1Saludo").hide();
+                    }
+                );
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
