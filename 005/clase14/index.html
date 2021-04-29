@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,68 @@
     <title>Javascript y jQuery</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    <h1>Hola Mundo</h1>
+    <h1 id="burbuja">Hola Mundo</h1>
+
+    <img src="img/greeting.png" alt="Hombre saludando" onmouseover="hablar('Hola')" onmouseout="hablar('Chao')"
+        id="imgSaludo">
+
+
+    <br>
+
+    <button type="button" onclick="saludar()">Llamada a Función</button>
+    <button type="button"
+        onclick="alert('Hola Mundo desde el botón'); console.log('Hola Mundo desde el botón')">Ejecutar Alert y
+        Log</button>
+    <hr>
+
+    <form action="">
+        <label for="num1">Numero 1: </label>
+        <input type="number" name="num1" id="num1">
+        <br>
+        <label for="num2">Numero 2: </label>
+        <input type="number" name="num2" id="num2">
+        <br>
+        <button type="button" onclick="sumar()">Sumar JS</button>
+        <button type="button" id="btnSumar">Sumar jQuery</button>
+        <h3 id="res"></h3>
+
+    </form>
 
     <script>
-            //Sólo JavaScript
-            alert("Hola Mundo desde HTML")
-            console.log("Hola Mundo desde HTML")
+        //Sólo JavaScript
+        //alert("Hola Mundo desde HTML")
+        console.log("Hola Mundo desde HTML")
+
+        $(document).ready(
+            function () {
+
+                $("#imgSaludo").click(
+                    function () {
+                        $("#imgSaludo").fadeOut();  //hide()
+                    }
+                );
+
+                $("#btnSumar").click(
+                    function () {
+                        var n1 = parseInt($("#num1").val());
+                        var n2 = parseInt($("#num2").val());
+
+                        var suma = n1 + n2;
+
+                        $("#res").html(suma);
+
+                    }
+                );
+
+            });
+
     </script>
 </body>
+
 </html>
