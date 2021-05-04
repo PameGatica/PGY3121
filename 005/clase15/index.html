@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+
+    <form action="" id="form1">
+        <label for="num1">Número 1: </label>
+        <input type="text" name="num1" id="num1">
+        <h3 id="mensajes"></h3>
+        <br>
+
+        <label for="cboOpciones">Opciones:</label>
+        <select name="cboOpciones" id="cboOpciones">
+            <option value="1">Lunes</option>
+            <option value="2">Miércoles</option>
+            <option value="3">Viernes</option>
+        </select>
+        <br>
+        <button type="submit">Click</button>
+    </form>
+
+    <script>
+        $(document).ready(
+            function(){
+
+                $("#num1").focus(
+                    function(){
+                       // alert("Num1 obtuvo el foco")
+                       $("#mensajes").html("Num1 obtuvo el foco")
+                    }
+                );
+
+
+                $("#num1").blur(
+                    function(){
+                        //alert("Num1 perdió el foco")
+                        $("#mensajes").html("Num1 perdió el foco")
+                    }
+                );
+
+                $("#cboOpciones").change(
+                    function(){
+                        $("#mensajes").html("cboOpciones cambió la opción seleccionada")
+                    }
+                );
+
+                $("#form1").submit(
+                    function(){
+                        var numeroMagico = 1234
+                        var numeroIngresado = parseInt($("#num1").val())
+                        
+
+                        if(numeroIngresado == numeroMagico) {
+                            alert("Se ha enviado el formulario")
+                        }else{
+                            event.preventDefault()
+                            alert("ERROR")
+                        }
+                    }
+                );
+
+
+
+
+
+
+        }); //FIN jQuery
+
+    </script>
+</body>
+</html>
