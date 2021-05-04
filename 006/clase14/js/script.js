@@ -1,4 +1,4 @@
-alert("Hola Mundo desde librería")
+//alert("Hola Mundo desde librería")
 console.log("Hola Mundo desde librería")
 
 function saludar(){
@@ -9,7 +9,7 @@ function saludar(){
 
 function hablar(mensaje){
     //alert(mensaje)
-    document.getElementById("h1Saludo").innerHTML = mensaje
+    document.getElementById("spanSaludo").innerHTML = mensaje
     console.log("Hombre dijo " + mensaje)
 }
 
