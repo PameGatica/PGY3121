@@ -1,0 +1,3 @@
+function ocultaMensajes(){
+    $("#mensajes").fadeOut()
+}

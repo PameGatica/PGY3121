@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Formularios</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Validación de Formularios</h1>
+
+    <form action="" id="form1">
+
+            <label for="txt1">Ingresa un texto</label>
+            <input type="text" name="txt1" id="txt1" required>
+            <span id="mensajes1" class="alert alert-danger" role="alert"></span>
+            <br>
+
+            <label for="txt2">Ingresa otro texto</label>
+            <input type="text" name="txt2" id="txt2">
+            <span id="mensajes2" class="alert alert-danger" role="alert"></span>
+            <br>
+
+
+            <button>Enviar</button>
+   </form>
+
+   <script>
+       $(document).ready(function(){
+            //AQUI VA MI CODIGO jQUERY
+            $("#mensajes1").hide()
+            $("#mensajes2").hide()
+            
+            $("#txt1").focus(function(){
+               // alert("TXT1 ganó el foco")
+                $("#mensajes1").fadeOut()
+            });
+
+            $("#txt2").focus(function(){
+               // alert("TXT1 ganó el foco")
+               // $("#mensajes2").fadeOut()
+            });
+
+            $("#txt1").blur(function(){
+               //ACA VAN LAS VALIDACIONES DE TXT1
+
+
+                $("#mensajes1").html("TXT1 perdió el foco")
+                $("#mensajes1").fadeIn()
+               //setTimeout(ocultaMensajes,5000)
+
+            });
+
+            $("#txt2").blur(function(){
+               //ACA VAN LAS VALIDACIONES DE TXT2
+                var txt2 = $("#txt2").val()
+
+                if(txt2.length < 5){
+                    $("#mensajes2").html("Texto debe contener al menos 5 caracteres")
+                    $("#mensajes2").fadeIn()
+                    $("#txt2").focus()
+                }
+
+                
+               //setTimeout(ocultaMensajes,5000)
+
+            });
+
+
+            $("#form1").submit(function(){
+                    //QUE HACER AL ENVIAR EL FORMULARIO
+
+                    var txt1 = $("#txt1").val()
+
+                    if(txt1.trim().length == 0){
+                        $("#mensajes1").html("Escribe algo")
+                        event.preventDefault()
+                    }
+
+
+                    //alert("Se está enviando el fomulario al servidor")
+
+            });
+
+
+
+
+       });//FIN jQUERY
+
+   </script>
+</body>
+</html>
