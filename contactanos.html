@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRA4 - Ayuda a un Peludo - Formularios Web </title>
+    <title>PRA5 - Ayuda a un Peludo - Validación de Formularios </title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -70,27 +70,34 @@
                         </div>
                         <div class="col"></div>
                     </div>
-                    <div class="row">
+                    <div class="row pb-2">
                         <div class="col-2"></div>
                         <div class="form-check form-check-inline pl-3">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">RUT</label>
+                            <input class="form-check-input" type="radio" name="tipoId" id="optRut" value="rut">
+                            <label class="form-check-label" for="optRut">RUT</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Pasaporte</label>
+                            <input class="form-check-input" type="radio" name="tipoId" id="optPasaporte"
+                                value="pasaporte">
+                            <label class="form-check-label" for="optPasaporte">Pasaporte</label>
                         </div>
+                        <div class="form-check form-check-inline">
+                            <div class="invalid-feedback" id="etipoId"></div>
+                        </div>
+
                         <div class="col-2"></div>
                     </div>
                     <div class="form-row pb-2">
                         <div class="col-2"></div>
                         <div class="col-3">
-                            <input type="text" class="form-control" placeholder="N° Identificación">
+                            <fieldset id="fsId" disabled>
+                                <input type="text" class="form-control" placeholder="N° Identificación" id="txtId">
+                                <div class="invalid-feedback" id="eId"></div>
+                            </fieldset>
                         </div>
                         <div class="col-5">
-                            <input type="text" class="form-control" placeholder="Nombre Completo">
+                            <input type="text" class="form-control" placeholder="Nombre Completo" id="txtNombre">
+                            <div class="invalid-feedback" id="eNombre"></div>
                         </div>
                         <div class="col">
 
@@ -102,17 +109,19 @@
                     <div class="form-row pb-2">
                         <div class="col-2"></div>
                         <div class="col">
-                            <input type="email" class="form-control" placeholder="Correo Electrónico">
+                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="txtEmail">
+                            <div class="invalid-feedback" id="eEmail"></div>
                         </div>
                         <div class="col">
-                            <input type="tel" class="form-control" placeholder="Teléfono de Contacto">
+                            <input type="tel" class="form-control" placeholder="Teléfono de Contacto" id="txtTelefono">
+                            <div class="invalid-feedback" id="eTelefono"></div>
                         </div>
                         <div class="col-2"></div>
                     </div>
                     <div class="form-row pb-2">
                         <div class="col-2"></div>
                         <div class="col">
-                            <select class="custom-select mb-3">
+                            <select class="custom-select" id="cboCiudad">
                                 <option selected>Ciudad de Residencia</option>
                                 <option value="1">Valparaíso</option>
                                 <option value="2">Viña del Mar</option>
@@ -121,6 +130,7 @@
                                 <option value="5">Villa Alemana</option>
                                 <option value="6">Casablanca</option>
                             </select>
+                            <div class="invalid-feedback mb-2" id="eCiudad"></div>
                         </div>
                         <div class="col-2"></div>
                     </div>
@@ -128,8 +138,10 @@
                     <div class="form-row pb-2">
                         <div class="col-2"></div>
                         <div class="col">
-                            <label for="exampleFormControlTextarea1">Cuéntanos por qué te gustaría participar en nuestra ONG</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            <label for="txaComentarios">Cuéntanos por qué te gustaría participar en nuestra
+                                ONG</label>
+                            <textarea class="form-control" id="txaComentarios" rows="4"></textarea>
+                            <div class="invalid-feedback" id="eComentarios"></div>
                         </div>
                         <div class="col-2"></div>
                     </div>
@@ -171,6 +183,7 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/validacion.js"></script>
 </body>
 
 </html>
