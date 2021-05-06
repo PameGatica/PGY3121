@@ -1,3 +1,7 @@
 body{
     font-family: Arial;
 }
+
+#datos td{
+    border: 1px solid #333;
+}
