@@ -22,6 +22,20 @@ function isTelefono(telefono) {
 var tipoId = "Identificación";
 //id
 
+function validaTipoId(){
+    if ($('input[name="tipoId"]').is(':checked')) {
+        noError("eTipoId")
+        $('#fsId').prop('disabled', false);
+        tipoId = $('input[name=tipoId]:checked').val()
+        return true
+    } else {
+        $('#fsId').prop('disabled', true);
+        mensajeError("etipoId","Selecciona un tipo de identificación")
+
+        return false
+    }
+}
+
 function validaId() {
     if ($("#txtId").val().trim().length == 0) {
         mensajeError("eId", "Ingresa N° de " + tipoId)
@@ -110,13 +124,7 @@ $(document).ready(function () {
 
     //Click en Tipo de ID
     $('input[name="tipoId"]').click(function () {
-        if ($('input[name="tipoId"]').is(':checked')) {
-            $("#etipoId").fadeOut()
-            $('#fsId').prop('disabled', false);
-            tipoId = $('input[name=tipoId]:checked').val()
-        } else {
-            $('#fsId').prop('disabled', true);
-        }
+       validaTipoId()
     });
 
 
@@ -166,7 +174,12 @@ $(document).ready(function () {
     //Envío del formulario
     $("#form1").submit(function () {
         exito = false
+
+        
+
+        
         if (
+            !validaTipoId() ||
             !validaId() ||
             !validaNombre() ||
             !validaEmail() ||
