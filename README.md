@@ -4,6 +4,7 @@
 [:round_pushpin: Demo](https://pamegatica.github.io/PGY3121/index.html)
 - [x] Práctica 3: Bootstrap
 - [x] Práctica 4: Formulario Web 
+- [x] Práctica 5: Validación de Formulario con jQuery 
 
 
 
