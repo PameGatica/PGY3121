@@ -24,7 +24,7 @@ var tipoId = "Identificación";
 
 function validaTipoId(){
     if ($('input[name="tipoId"]').is(':checked')) {
-        noError("eTipoId")
+        noError("etipoId")
         $('#fsId').prop('disabled', false);
         tipoId = $('input[name=tipoId]:checked').val()
         return true
