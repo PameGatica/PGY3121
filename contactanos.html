@@ -62,7 +62,7 @@
 
         <section class="row pt-3 pb-3">
             <div class="container-fluid">
-                <form>
+                <form id="form1" autocomplete="off">
                     <div class="row pb-4">
                         <div class="col"></div>
                         <div class="col-8">
@@ -73,12 +73,12 @@
                     <div class="row pb-2">
                         <div class="col-2"></div>
                         <div class="form-check form-check-inline pl-3">
-                            <input class="form-check-input" type="radio" name="tipoId" id="optRut" value="rut">
+                            <input class="form-check-input" type="radio" name="tipoId" id="optRut" value="RUT">
                             <label class="form-check-label" for="optRut">RUT</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="tipoId" id="optPasaporte"
-                                value="pasaporte">
+                                value="Pasaporte">
                             <label class="form-check-label" for="optPasaporte">Pasaporte</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -122,7 +122,7 @@
                         <div class="col-2"></div>
                         <div class="col">
                             <select class="custom-select" id="cboCiudad">
-                                <option selected>Ciudad de Residencia</option>
+                                <option value="0">Ciudad de Residencia</option>
                                 <option value="1">Valparaíso</option>
                                 <option value="2">Viña del Mar</option>
                                 <option value="3">Concón</option>
@@ -141,7 +141,15 @@
                             <label for="txaComentarios">Cuéntanos por qué te gustaría participar en nuestra
                                 ONG</label>
                             <textarea class="form-control" id="txaComentarios" rows="4"></textarea>
-                            <div class="invalid-feedback" id="eComentarios"></div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="invalid-feedback" id="eComentarios"></div>
+                                </div>
+                                <div class="col-2">
+                                    <small class="form-text text-muted text-right" id="contChar">0</small>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-2"></div>
                     </div>
