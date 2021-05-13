@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Request a position. We accept positions whose age is not
+        // greater than 10 minutes. If the user agent does not have a
+        // fresh enough cached position object, it will automatically
+        // acquire a new one.
+        navigator.geolocation.getCurrentPosition(successCallback,
+            errorCallback,
+            { maximumAge: 600000 });
+
+        function successCallback(position) {
+            // By using the 'maximumAge' option above, the position
+            // object is guaranteed to be at most 10 minutes old.
+            console.log(position)
+            console.log(position.coords.latitude)
+            console.log(position.coords.longitude)
+        }
+
+        function errorCallback(error) {
+            // Update a div element with error.message.
+            console.log(error)
+        }
+
+        var watchId = navigator.geolocation.watchPosition(function(){});
+    </script>
+<button onclick="navigator.geolocation.clearWatch(watchId);">Clear</button>
+</body>
+
+</html>
