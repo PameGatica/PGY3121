@@ -1,3 +1,7 @@
+body{
+    background-color:  #E1E1E1;
+}
+
 .carousel-item {
     height: 50vh;
 }
@@ -21,4 +25,27 @@ footer {
     background-color: #EBAB47;
     border: #EBAB47;
     ;
+}
+#top{
+    background-color:  #E1E1E1;
+}
+#clima{
+    width: 100%;
+    text-align: center;
+}
+
+#icoClima, #dataClima{
+float:left;
+}
+
+#icoClima{
+    width: 50%;
+    text-align: right;
+}
+
+#dataClima{
+    
+}
+#ciudad, #temperatura{
+    font-size: 1.5em;
 }
