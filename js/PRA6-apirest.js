@@ -28,7 +28,7 @@ function getClima(posicion){
 
     var APIKey = '83203aa9f7e1fc2e7015240f64c45793'  //KEY de www.openweathermap.org (Registrarse para obtener una)
 
-    var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+APIKey+'&lang=es&units=metric'
+    var url = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid='+APIKey+'&lang=es&units=metric'
 
     $.getJSON(
         url,
@@ -40,7 +40,7 @@ function getClima(posicion){
             $("#ciudad").html(data.name)
             $("#temperatura").html(data.main.temp.toFixed(0)+'°c')
 
-            var img_url  = 'http://openweathermap.org/img/wn/'+ data.weather[0].icon+'@2x.png'
+            var img_url  = 'https://openweathermap.org/img/wn/'+ data.weather[0].icon+'@2x.png'
 
             $('#imgClima').attr('src', img_url);
         }
