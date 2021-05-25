@@ -5,6 +5,7 @@
 - [x] Práctica 3: Bootstrap
 - [x] Práctica 4: Formulario Web 
 - [x] Práctica 5: Validación de Formulario con jQuery 
+- [x] Práctica 6: Uso de API REST de Clima basado Georreferenciación HTML5
 
 
 
